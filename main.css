@@ -513,3 +513,105 @@ nav {
   border-radius: 50%;
   margin-bottom: -60px;
 }
+/*###############contact################*/
+
+.contact {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/projects-1.jpeg) center/cover fixed no-repeat;
+  color: #f5f3f5;
+}
+
+.contact-info,
+.contact-form {
+  margin: 40px 0;
+  padding: 20px 40px;
+}
+
+.contact-detail {
+  display: flex;
+  margin: 20px 0;
+}
+
+.contact-icon {
+  font-size: 50px;
+  margin-right: 20px;
+  align-self: center;
+}
+
+.contact-text h3 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background: #f5f3f5;
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.contact-form h3 {
+  width: 100%;
+  background: #8fcbfd;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+form input,
+form textarea {
+  margin: 5px 0;
+  padding: 5px 0 !important;
+  border: none;
+  font-size: 20px;
+  border-bottom: 3px solid #8fcbfd;
+  background: transparent;
+}
+
+form input::placeholder {
+  text-transform: capitalize;
+  color: #8a8e8a;
+}
+
+form textarea::placeholder {
+  text-transform: capitalize;
+  color: #8a8e8a;
+}
+
+form button {
+  font-size: 25px;
+  margin: 10px 0;
+  background: #8fcbfd;
+  border-radius: 20px;
+  padding: 5px 0;
+  color: #f5f3f5;
+  transition: color 2s ease, background 2s ease;
+}
+
+form button:hover {
+  background: #191919;
+  color: #8fcbfd;
+}
+
+@media screen and (min-width: 776px) {
+  .contact-center {
+    display: flex;
+    padding: 0 40px;
+  }
+  .contact-info {
+    flex: 0 0 calc(60% - 1em);
+  }
+  .contact-form {
+    flex: 0 0 calc(40% - 1em);
+  }
+}
