@@ -177,7 +177,7 @@ nav {
   .nav-icons a {
     font-size: 30px;
     color: #8fcbfd;
-    transition: color 2s ease 1s;
+    transition: color 2s ease;
   }
   .nav-icons a:hover {
     color: #f5f3f5;
@@ -409,4 +409,63 @@ nav {
 .project:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+/*##############team members#####################*/
+
+.team-members {
+  padding: 100px 20px;
+  background: #f5f3f5;
+  color: #191919;
+}
+
+.member {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.member img {
+  border-radius: 30px;
+}
+
+.member h3 {
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+.member h6 {
+  margin: 0 0 7px 0;
+  text-transform: capitalize;
+  color: #a72121;
+}
+
+.member p {
+  margin: 0 0 10px 0;
+  line-height: 2;
+  color: #9f9a9a;
+}
+
+.member-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+.member-icons a {
+  font-size: 30px;
+}
+
+.member-icons .fa-facebook {
+  color: #3b5998;
+}
+
+.member-icons .fa-instagram {
+  color: #fb3958;
+}
+
+.member-icons .fa-google {
+  color: #f4c20e;
+}
+
+.member-icons .fa-twitter {
+  color: #00aced;
 }
