@@ -76,3 +76,124 @@ body {
 .change .bar3 {
   transform: rotate(45deg) translate(-7px, -8px);
 }
+/*####header*/
+
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(img/header-bcg.jpeg) center/cover fixed no-repeat;
+  /*  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  */
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  flex: 0 0 auto;
+}
+
+.banner {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerCard {
+  flex: 0 0 90%;
+  text-align: center;
+  padding: 100px 0;
+  outline: 1px solid #191919;
+  outline-offset: -10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.bannerCard h1 {
+  font-size: 40px;
+  color: #8fcbfd;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.bannerCard span {
+  color: #03243e;
+}
+
+.bannerCard h3 {
+  text-transform: capitalize;
+  letter-spacing: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .btn {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .nav-container {
+    background: transparent;
+    border-bottom: none;
+    flex: 0 0 auto;
+  }
+  .nav-links {
+    padding: 0 20px;
+    flex: 1 0 auto;
+    display: flex !important;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  .nav-links li {
+    flex: 1 0 auto;
+  }
+  .nav-links a {
+    background: transparent;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 10px;
+  }
+  .nav-links a:hover {
+    padding-left: 10px;
+  }
+  .nav-icons {
+    flex: 1 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0 20px;
+  }
+  .nav-icons li {
+    flex: 1 0 40px;
+    text-align: center;
+  }
+  .nav-icons a {
+    font-size: 30px;
+    color: #8fcbfd;
+    transition: color 2s ease 1s;
+  }
+  .nav-icons a:hover {
+    color: #f5f3f5;
+  }
+  .bannerCard {
+    flex: 0 0 70%;
+  }
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: background 2s ease;
+}
+
+.navBackground {
+  background: rgba(0, 0, 0, 0.8);
+}
